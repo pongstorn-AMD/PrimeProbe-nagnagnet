@@ -93,7 +93,7 @@ int main(int argc, char **argv){
 					insert(conflict, &buf[n*SET + set]);
 				}
 			}
-			free(conflict);
+			free(conflict); // ******* this code can't work!!! conflict is inserted in front of set, but later free. undefined behavior!!!
 		}
 		//conflict set----------------------------------------------------
 		struct st *conflict;
