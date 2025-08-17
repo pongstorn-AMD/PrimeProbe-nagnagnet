@@ -263,7 +263,7 @@ void shuffle(int *array, int set, int n){
 	}
 }
 
-
+// insert candidate in front of set
 void insert(struct st *set, struct st *candidate){
 	candidate->prev = set->prev;
 	set->prev->next = candidate;
